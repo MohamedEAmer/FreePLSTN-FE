@@ -1,0 +1,130 @@
+.navbar {
+  background-color: var(--color-primary);
+  color: #d3f36b;
+  padding: 5px 0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  margin-bottom: 2rem;
+  z-index: 99999999;
+}
+.icons {
+  padding-right: 0.3rem;
+}
+.sheet {
+  width: 1.3vw;
+  margin-inline: 0.5rem;
+  margin-bottom: 0;
+  border-radius: 20%;
+  background-color: var(--color-primary);
+  background-blend-mode: screen;
+}
+.active {
+  background: #5b6370;
+  color: var(--color-gray-700);
+  border-radius: 4px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 10px;
+  width: fit-content;
+}
+
+.navbar ul li a {
+  /* display: block; */
+  color: #d3f36b;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar ul li a:not(.active):hover {
+  background-color: #ebeae4;
+  border-radius: 4px;
+  transform: translateY(-2px);
+}
+
+.navbar ul li button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navbar ul li button:hover {
+  background-color: #ebeae4;
+  border-radius: 4px;
+  transform: translateY(-2px);
+}
+/* what (I) added */
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  /* bottom: 0; */
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #000;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.topbar .to-show {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    padding: 2px 0;
+    z-index: 1000;
+  }
+
+  .topbar .to-hide {
+    display: none;
+  }
+
+  .topbar .to-show {
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+  }
+  .topbar .to-show svg {
+    width: 36px;
+    height: 36px;
+  }
+  .navbar ul:last-child {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2px;
+  }
+  .navbar ul:last-child li {
+    margin-right: 10px;
+  }
+  .navbar ul:last-child li a {
+    display: block;
+    align-self: center;
+    width: 36px;
+    height: 36px;
+  }
+}

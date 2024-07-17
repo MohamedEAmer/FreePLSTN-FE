@@ -1,0 +1,20 @@
+{
+  "short_name": "FreePLSTN",
+  "name": "FreePLSTN App",
+  "icons": [
+    {
+      "src": "list.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "list.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "theme_color": "#3367D6"
+}

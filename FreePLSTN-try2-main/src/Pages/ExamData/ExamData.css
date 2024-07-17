@@ -1,0 +1,138 @@
+:root {
+
+    height: 100vh !important;
+  }
+
+.exam-data-container {
+    background-color: #5b6370; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Space around the container */
+}
+
+.exam-download-container {
+    background-color: #5b6370; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Space around the container */
+}
+
+.exam-download-container h2 {
+    color: #d3f36b; /* Darker text color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.exam-download-container button {
+    background-color: #212529; /* Primary button color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.exam-download-container button:hover {
+    background-color: #d3f36b; /* Darker on hover */
+}
+
+.exam-settings-container {
+    background-color: #5b6370; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Space around the container */
+}
+
+.exam-settings-container h2 {
+    color: #d3f36b; /* Darker text color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.exam-settings-container button {
+    background-color: #212529; /* Success button color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.exam-settings-container button:hover {
+    background-color: #d3f36b; /* Darker on hover */
+}
+
+.create-exam-setting-section {
+    background-color: #5b6370; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space above */
+}
+
+.setting-btn {
+    background-color: #212529; /* Success button color */
+    color: white; /* White text */
+    border: none !important; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin: 1rem;
+}
+
+.action-btn {
+    background-color: #212529; /* Success button color */
+    color: #d3f36b; /* White text */
+    border: none !important; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin: 0 1rem;
+}
+
+.create-exam-section h3 {
+    color: #343a40; /* Dark text */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.question-type-dropdown {
+    margin-bottom: 20px; /* Space below dropdown */
+}
+
+.dropdown-toggle {
+    background-color: #212529; /* Success button color */
+    color: white; /* White text */
+    border: none !important; /* Remove default border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.dropdown-menu {
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown-item:hover {
+    background-color: #d3f36b; /* Darker blue on hover */
+    color: white; /* White text on hover */
+}
+
+@media (max-width: 768px) {
+    .exam-data-container,
+    .exam-download-container,
+    .exam-settings-container,
+    .create-exam-setting-section {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .setting-btn,
+    .action-btn {
+        margin: 10px 0;
+        width: 100%;
+    }
+}

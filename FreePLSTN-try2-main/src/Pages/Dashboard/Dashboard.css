@@ -1,0 +1,51 @@
+.addButton {
+  width: fit-content;
+  background-color: #000;
+  font-size: larger;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 0;
+  color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+.addButton:hover {
+  background-color: #d3f36b;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.Exam-container {
+  background-color: #d3f36b;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-bottom: 20px solid var(--color-primary);
+  overflow: hidden;
+}
+.Exam-container p {
+  font-size: small;
+}
+.Exam-container img {
+  width: 4rem;
+  overflow: hidden;
+}
+.Des-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Exam-container:hover {
+  background-color: #ebeae4;
+}
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-left: 3rem;
+  gap: 1.5rem;
+}

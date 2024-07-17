@@ -1,0 +1,18 @@
+:root {
+  height: 100% !important;
+  /* background-color: #5b6370; */
+}
+form {
+  margin-top: 20px;
+}
+.images {
+  width: 17rem;
+}
+.images-l {
+  width: 12rem;
+}
+.rl-images {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}

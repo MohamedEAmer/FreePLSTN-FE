@@ -1,0 +1,245 @@
+/* Global Styles */
+:root {
+  background-color: #dfdfdf !important;
+  --color-primary: #000000;
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #d3f36b;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+button {
+  padding: 5px 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #d3f36b;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #5b6370;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.container {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #5b6370;
+}
+
+/* Navbar Styles */
+
+/* Form Styles */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 3rem;
+  justify-content: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-inline: auto;
+  /* margin-top: 1rem; by:me */
+  margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #d3f36b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: fit-content;
+}
+
+button[type="submit"]:hover {
+  background-color: #5b6370;
+}
+
+/* Page Specific Styles */
+.login-container,
+.register-container,
+.profile-container,
+.create-exam-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100vh;
+  /* margin-bottom: 5rem; */
+}
+
+.login-container,
+.register-container,
+.create-exam-container,
+.upload-exam-container,
+.grade-exams-container,
+.view-results-container,
+.profile-container,
+.settings-container,
+.Error-container,
+.Questions__container,
+.Resultes__container,
+.Resultes {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  margin:auto ;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  gap: 1rem;
+  background-color: #5b6370;  
+}
+.Questions__container {
+  width: 90%;
+}
+
+.login-container h2,
+.register-container h2,
+.dashboard-container h2,
+.create-exam-container h2,
+.upload-exam-container h2,
+.grade-exams-container h2,
+.view-results-container h2,
+.profile-container h2,
+.settings-container h2,
+.Error-container h2 {
+  text-align: center;
+}
+
+.dashboard-container nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.dashboard-container nav ul li {
+  margin: 1rem 0;
+}
+small {
+  display: flex;
+}
+
+.dashboard-container nav ul li a {
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.dashboard-container nav ul li a:hover {
+  background-color: #5b6370;
+}
+
+.create-exam-container .questions-section,
+.grade-exams-container .uploaded-exams,
+.grade-exams-container .grading-tools,
+.grade-exams-container .bubble-sheet-results,
+.view-results-container .students-list,
+.view-results-container .student-details,
+.help-support-container .faqs,
+.help-support-container .contact-form,
+.help-support-container .user-manuals {
+  margin-top: 10px;
+}
+
+.uploaded-files h3,
+.students-list h3,
+.student-details h3,
+.user-manuals h3,
+.contact-form h3,
+.faqs h3 {
+  margin-top: 20px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* src/LandingPage.css */
+
+@media screen and (max-width: 600px) {
+  .Grade {
+    width: 300px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+  }
+  .navbar ul li {
+    font-size: small;
+  }
+
+  .navbar {
+    width: 4rem;
+    height: 100%;
+  }
+
+  .login-container,
+  .register-container,
+  .create-exam-container,
+  .upload-exam-container,
+  .grade-exams-container,
+  .view-results-container,
+  .profile-container,
+  .settings-container,
+  .Error-container,
+  .Questions__container,
+  .Resultes__container,
+  .Resultes {
+    max-width: 400px;
+    flex-wrap: wrap;
+    margin-left: 4.3rem;
+    align-content: center;
+  }
+  .container {
+    margin-left: 4.3rem;
+    width: 70%;
+  }
+  .images {
+    width: 12rem;
+  }
+}
